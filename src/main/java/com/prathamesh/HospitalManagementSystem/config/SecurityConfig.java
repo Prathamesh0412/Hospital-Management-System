@@ -40,7 +40,7 @@ public class SecurityConfig {
 
                         // Appointments → PATIENT & DOCTOR
                         .requestMatchers("/appointments/**")
-                        .hasAnyRole("PATIENT", "DOCTOR")
+                        .hasAnyRole("PATIENT", "DOCTOR", "ADMIN")
 
                         // Doctors → ADMIN & DOCTOR
                         .requestMatchers("/doctors/**")
